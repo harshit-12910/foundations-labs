@@ -1,0 +1,49 @@
+# Lab: Nmap Local Scan
+# Date: Fri Oct 31 19:11:26 UTC 2025
+# Env: WSL2 Ubuntu 22.04
+
+# --- START SESSION ---
+
+Script started on 2025-10-31 19:11:47+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ ps[Kwd
+[?2004l/home/harshit/foundations-labs/01-nmap-lab/evidence
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ ls
+[?2004lcommands.log
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ cd [K[K[Knm[K[Koing[K[K[K[Kping google.com
+[?2004lPING google.com (142.251.222.142) 56(84) bytes of data.
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=1 ttl=114 time=20.6 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=2 ttl=114 time=19.6 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=3 ttl=114 time=20.1 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=4 ttl=114 time=20.8 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=5 ttl=114 time=20.1 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=6 ttl=114 time=19.8 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=7 ttl=114 time=21.8 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=8 ttl=114 time=19.2 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=9 ttl=114 time=18.9 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=10 ttl=114 time=20.1 ms
+64 bytes from pnmaaa-az-in-f14.1e100.net (142.251.222.142): icmp_seq=11 ttl=114 time=18.9 ms
+^Z
+[1]+  Stopped                 ping google.com
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ [?2004l
+exit
+There are stopped jobs.
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ ls
+[?2004lcommands.log
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ cd c[K[K[K[Kcat commands.log 
+[?2004l# Lab: Nmap Local Scan
+# Date: Fri Oct 31 19:11:26 UTC 2025
+# Env: WSL2 Ubuntu 22.04
+
+# --- START SESSION ---
+
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ [7mscript -a -q commands.log[27mscript -a -q commands.log
+[?2004l[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ gf[K[Kfg
+[?2004lbash: fg: current: no such job
+[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab/evidence[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab/evidence[00m$ cd ..
+[?2004l[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs/01-nmap-lab[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs/01-nmap-lab[00m$ cd ..
+[?2004l[?2004h]0;harshit@DESKTOP-4U1VPIA: ~/foundations-labs[01;32mharshit@DESKTOP-4U1VPIA[00m:[01;34m~/foundations-labs[00m$ git init
+[?2004l[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
+[33mhint: is subject to change. To configure the initial branch name to use in all[m
+[33mhint: of your new repositories, which will suppress this warning, call:[m
+[3
